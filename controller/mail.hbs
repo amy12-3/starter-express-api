@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/amy12-3/amethyst-chatbot/main/logo.png" type="image/x-icon">
+    <title>Amethyst</title>
+    <style>
+      
+html,
+body {
+  background-color: #ffffff;
+  font: 400 1rem/1.625rem "Open Sans", sans-serif;
+}
+
+.transition {
+  transition: .3s cubic-bezier(.3, 0, 0, 1.3)
+}
+
+.card {
+  background-color: #fcf8ff;
+  padding: 25px 0px;
+  width: 500px;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+  overflow: hidden;
+}
+.gg{
+    justify-content: center;
+    text-align: center;
+      padding-left:40px;
+    padding-right:40px;
+}
+.confirm{
+  color: #5f00a8;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.table{
+  width: 100%;
+}
+.td{
+  text-align: center;
+}
+.otp{
+    color:#060606 !important;
+}
+
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 89%;
+  margin-left: 28px;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #dcc2ff;
+  color: white;
+}
+@media (max-width: 800px){
+    .container{
+        width: 100%;
+    }
+}
+@media (max-width: 600px){
+    .container{
+        width: 85%;
+        display: block;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="card">
+      <div class="gg">
+        <img  src="https://raw.githubusercontent.com/amy12-3/amethyst-chatbot/main/logo.png" alt="" width="160px" height="160px">
+        
+      </div>
+      <div class="confirm">
+        <h2>Order Confirmation</h2>
+      </div>
+      <div class ="gg">
+        <h4>Hey {{userName}},</h4>
+        <h4>Thank you for placing your order with us.</h4>
+          </div>
+      <div class="confirm">
+        <h4>___________________________________________________</h4>
+      </div>
+      <table id="customers" class="center">
+        <tr>
+          <th>Product Name</th>
+          <th>Price</th>
+        </tr>
+        <tr>
+          <td>{{productName}}</td>
+          <td>{{amount}}</td>
+        </tr>
+        <tr>
+          <td>{{productName}}</td>
+          <td>{{amount}}</td>
+        </tr>
+      </table>
+      <div class="confirm">
+        <h4>___________________________________________________</h4>
+      </div>
+      <h4 style="text-align: center;">You have won a Gift Card.</h4>
+      <h4 style="text-align: center;line-height:0.5rem ;">Gift Card no : SDA123DFG</h4>
+      <h4 style="text-align: center;">Thanks,{{userName}}</h4>
+    </div>
+</body>
+</html>
