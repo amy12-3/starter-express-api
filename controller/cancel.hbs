@@ -21,13 +21,13 @@ body {
 
 .card {
   background-color: #fcf8ff;
-  height: 1100px;
+  padding: 25px 0px;
   width: 500px;
   position: absolute;
   margin: auto;
   left: 0;
   right: 0;
-  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
   overflow: hidden;
 }
 .gg{
@@ -61,6 +61,17 @@ body {
 .column img {
   margin-top: 8px;
   vertical-align: middle;
+}
+@media (max-width: 800px){
+    .card{
+        width: 100%;
+    }
+}
+@media (max-width: 600px){
+    .card{
+        width: 85%;
+        display: block;
+    }
 }
     </style>
 </head>
