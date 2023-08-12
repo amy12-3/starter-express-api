@@ -8,6 +8,6 @@ app.use(buyprod)
 const cancel = require('./controller/cancel')
 app.use(cancel)
 
-app.listen(process.env.PORT || 3232, () => {
+app.listen(process.env.PORT || 3000, () => {
     console.log('listening amethyst')
 })
