@@ -40,7 +40,7 @@ route.post('/cancel', (req, res) => {
             res.send(balance)
         }   
     })
-
+    console.log("Mail sent")
     res.send('okay')
 })
 module.exports = route
